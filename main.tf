@@ -5,7 +5,7 @@ provider "yandex" {
   zone      = var.yandex_zone_default
 }
 
-
+ 
 resource "yandex_compute_instance" "vm-1" {
   name = "terraform1"
   platform_id = "standard-v1"
