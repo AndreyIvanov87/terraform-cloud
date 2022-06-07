@@ -4,7 +4,8 @@ provider "yandex" {
   folder_id = var.yandex_folder_id
   zone      = var.yandex_zone_default
 }
-  
+
+
  
 resource "yandex_compute_instance" "vm-1" {
   name = "terraform1"
