@@ -8,14 +8,21 @@ projects:
 - name: my-project-name
   dir: .
   workspace: stage
-  workspace: prod 
-  #terraform_version: v0.11.0
-  #delete_source_branch_on_merge: true
   autoplan:
     when_modified: ["*.tf", "../modules/**/*.tf", "atlantis.yaml"]
     enabled: true
   apply_requirements: [mergeable, approved]
   workflow: custom
+- name: my-project-2
+  dir: .
+  workspace: prod
+  autoplan:
+    when_modified: ["*.tf", "../modules/**/*.tf", "atlantis.yaml"]
+    enabled: true
+  apply_requirements: [mergeable, approved]
+  workflow: custom
+
+
 workflows:
   custom:
     plan:
