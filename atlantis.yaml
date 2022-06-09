@@ -22,7 +22,8 @@ workflows:
       - run: echo 'plan start'
       - init
       - plan:
-          extra_args: ["-lock", "false"]
+#          extra_args: ["-lock", "false"]
+	   extra_args: ["-out", "/home/ivanov/"]
       - run: echo 'plan finish'
     apply:
       steps:

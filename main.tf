@@ -48,3 +48,4 @@ resource "yandex_vpc_subnet" "subnet-1" {
 }
 
  
+ 
