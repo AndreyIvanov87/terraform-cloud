@@ -6,6 +6,7 @@ provider "yandex" {
 }
 
 
+
  
 resource "yandex_compute_instance" "vm-1" {
   name = "terraform1"
@@ -46,3 +47,12 @@ resource "yandex_vpc_subnet" "subnet-1" {
   v4_cidr_blocks = ["192.168.10.0/24"]
 }
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
