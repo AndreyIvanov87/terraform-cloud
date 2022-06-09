@@ -22,7 +22,7 @@ workflows:
       - run: echo 'plan start'
       - init
       - plan:
-		extra_args: ["-out", "/home/ivanov/"]
+        extra_args: ["-out", "/home/ivanov/"]
       - run: echo 'plan finish'
     apply:
       steps:
