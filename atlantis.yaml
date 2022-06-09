@@ -7,7 +7,8 @@ version: 3
 projects:
 - name: my-project-name
   dir: .
-  workspace: stage, prod 
+  workspace: stage
+  workspace: prod 
   #terraform_version: v0.11.0
   #delete_source_branch_on_merge: true
   autoplan:
