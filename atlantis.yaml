@@ -22,8 +22,8 @@ workflows:
       - run: echo 'plan start'
       - init
       - plan:
-          extra_args: ["-out", "/home/ivanov/default.tfplan"]
-          extra_args: ["-var-file", "/home/ivanov/terraform.tfvars"]
+          extra_args: ["-out", "/home/ivanov/default.tfplan", "-lock", "false"]
+#          extra_args: ["-var-file", "/home/ivanov/terraform.tfvars"]
       - run: echo 'plan finish'
     apply:
       steps:
